@@ -47,7 +47,7 @@ body,html{
     z-index: 1000; 
 }
 #nav ul {
-    display: flex;       
+    display: flex;
     list-style: none;
     width: 900px;   
     margin: auto;           
@@ -80,8 +80,8 @@ ul li a {
     width: 250px;
     height: 160px;
     padding: 15px;
-    display: flex;
     flex-direction: column;
+    display: flex;
     justify-content: center;
     align-items: center;
     gap:0px;
@@ -121,6 +121,41 @@ ul li a {
     border-radius: 10px;
     position: fixed;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    z-index: 1001; 
+}
+#mnvbk{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    z-index: 1000; 
+}
+#mnv {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 50vh;
+    background-color: white;
+    margin: 0;
+    color: inherit;
+    font-size: 6vw;
+    color: rgb(121, 121, 121);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mnv ul{
+    list-style: none;
+}
+#mnv ul li{
+    margin-top: 4vw;
+    border-bottom: 2px solid rgb(121, 121, 121);
+    width: 60vw;
+}
+#mnv ul li a{
+    text-decoration: none;
 }
 @media screen and (max-width:768px) {
     #nav{
