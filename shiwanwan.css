@@ -121,7 +121,6 @@ ul li a {
     border-radius: 10px;
     position: fixed;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
-    z-index: 1001; 
 }
 #mnvbk{
     display: none;
