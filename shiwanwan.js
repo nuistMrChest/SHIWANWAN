@@ -24,11 +24,13 @@ window.addEventListener('scroll', () => {
     }
 });
 let mnb=document.querySelector("#mnb");
-mnb.addEventListener('click',()=>{
-    mnb.style.width='120px';
-    mnb.style.height='240px';
-})
-window.addEventListener('click',()=>{
-    mnb.style.width='60px';
-    mnb.style.height='60px';
-})
+let mnvbk=document.querySelector("#mnvbk");
+mnb.addEventListener('click', (e) => {
+    e.stopPropagation();
+    mnvbk.style.display = 'block';
+});
+mnvbk.addEventListener('click', (e) => {
+    if (e.target === mnvbk) {
+        mnvbk.style.display = 'none';
+    }
+});
