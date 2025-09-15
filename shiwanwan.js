@@ -1,6 +1,5 @@
 window.addEventListener("scroll", function() {
     let scrolled = window.scrollY;
-    // 0.5 可以改成别的，越小滚动越慢
     document.getElementById("bk").style.transform = "translateY(" + scrolled * 0.5 + "px)";
 });
 let nav=document.querySelector("#nav");
@@ -12,8 +11,8 @@ window.addEventListener('scroll', () => {
         nav.style.backgroundColor = 'white';
         nu.style.color = 'black';
         nu.style.borderColor = 'black';
-        nu.style.borderTopWidth = '4px';
-        nu.style.borderBottomWidth = '4px'; 
+        nu.style.borderTopWidth = '2px';
+        nu.style.borderBottomWidth = '2px'; 
         nu.style.width = '100vw';
     } else {
         nav.style.backgroundColor = 'rgba(0,0,0,0)';
@@ -24,3 +23,12 @@ window.addEventListener('scroll', () => {
         nu.style.borderBottomWidth = '';
     }
 });
+let mnb=document.querySelector("#mnb");
+mnb.addEventListener('click',()=>{
+    mnb.style.width='120px';
+    mnb.style.height='240px';
+})
+window.addEventListener('click',()=>{
+    mnb.style.width='60px';
+    mnb.style.height='60px';
+})
