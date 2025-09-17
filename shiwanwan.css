@@ -200,6 +200,9 @@ ul li a {
     #cont p{
         font-size: 4.5vw;
     }
+    #cont h2{
+        font-size: 5vw;
+    }
     #cont h1{
         font-size: 5.5vw;
     }
@@ -213,6 +216,9 @@ ul li a {
     }
     #cont p{
         font-size: 1vw;
+    }
+    #cont h2{
+        font-size: 1.5vw;
     }
     #cont h1{
         font-size: 2vw;
