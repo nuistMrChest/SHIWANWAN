@@ -32,7 +32,7 @@ body,html{
     margin-top: 30px;
     margin-bottom: 30px;
     text-transform: uppercase;
-    height: 30px;
+    height: 40px;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -48,6 +48,8 @@ body,html{
     width: 900px;   
     margin: auto;           
     padding: 0;         
+    padding-top: 10px;
+    padding-bottom: 10px;
     justify-content: center;
     align-items: center;
     border-top: 2px;
