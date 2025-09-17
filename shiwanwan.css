@@ -25,11 +25,7 @@ body,html{
     display: flex;
     justify-content: center; 
     align-items: center;
-}
-#cont{
-    width: 100vw;
-    height: 1000px;
-    background-color: white;
+    flex-wrap: wrap;
 }
 #nav {
     color:white;
@@ -108,9 +104,47 @@ ul li a {
     width: 150px;
     border-radius: 40px;
 }
-.txt{
+#cont{
+    width: 100vw;
+    height: 1000vh;
+    background-color: white;
+}
+#cont p{
     width:70vw;
     margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 2vw;
+    color: rgb(104, 104, 104);
+}
+
+#cont h1{
+    margin:auto;
+    width:70vw;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#cont h2{
+    margin:auto;
+    width:70vw;
+    font-size: 2vw;
+    font-weight: bold;
+    color: rgb(104, 104, 104);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.hr {
+    width: 70vw;        /* 宽度与文本块一致 */
+    margin: 0 auto;    /* 整个容器居中 */
+    padding: 0px;
+}
+
+.hr hr {
+    width: 20%;        /* 横线的长度（自己调整） */
+    height: 5px;
+    margin: 20px 0;    /* 上下间距，左右不设，默认靠左 */
+    padding: 0px;
+    background-color: rgb(96, 81, 3);
 }
 #mnb{
     left: 20px;
@@ -163,6 +197,12 @@ ul li a {
     #mnb{
         display:block;
     }
+    #cont p{
+        font-size: 4.5vw;
+    }
+    #cont h1{
+        font-size: 5.5vw;
+    }
 }
 @media screen and (min-width:768px) {
     #nav{
@@ -170,5 +210,11 @@ ul li a {
     }
     #mnb{
         display: none;
+    }
+    #cont p{
+        font-size: 1vw;
+    }
+    #cont h1{
+        font-size: 2vw;
     }
 }
