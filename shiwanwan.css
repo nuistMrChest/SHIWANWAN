@@ -135,12 +135,52 @@ ul li a {
     padding-top: 15px;
     padding-bottom: 15px;
 }
+#cont ul{
+    margin:auto;
+    width:70vw;
+    list-style: none;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 2vw;
+    color: rgb(104, 104, 104);
+}
+#cont ul li{
+    text-decoration: none;
+}
 .hr {
     width: 70vw;        /* 宽度与文本块一致 */
     margin: 0 auto;    /* 整个容器居中 */
     padding: 0px;
 }
-
+#showcase{
+    width: 70vw;
+    height: 1000px;
+    margin: auto;
+    padding:20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: blueviolet;
+    gap: 6vw;
+}
+.show{
+    width: 25vw;
+    padding: 50px;
+    height: 400px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+}
+.show p{
+    width:20vw;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 2vw;
+    color: rgb(104, 104, 104);
+}
 .hr hr {
     width: 20%;        /* 横线的长度（自己调整） */
     height: 5px;
@@ -202,6 +242,13 @@ ul li a {
     #cont p{
         font-size: 4.5vw;
     }
+    #cont ul{
+        font-size: 6vw;
+    }
+    #cont ul li{
+        padding: 3vw;
+        margin: auto;
+    }
     #cont h2{
         font-size: 5vw;
     }
@@ -217,6 +264,9 @@ ul li a {
         display: none;
     }
     #cont p{
+        font-size: 1vw;
+    }
+    #cont ul{
         font-size: 1vw;
     }
     #cont h2{
