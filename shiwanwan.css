@@ -10,6 +10,16 @@
     top: 0;
     left: 0;
 }
+@font-face {
+    font-family: "aaa";
+    src: url("xVdcnyEXxRr8.woff") format("woff2"),
+         url("xVdcnyEXxRr8.woff2") format("woff"); 
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    font-family: "aaa", sans-serif;
+}
 #dark{
     width: 100vw;
     height: 100vh;
