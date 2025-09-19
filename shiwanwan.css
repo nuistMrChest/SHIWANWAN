@@ -107,6 +107,7 @@ ul li a {
     border-radius: 40px;
 }
 #cont{
+    padding-top: 3vw;
     width: 100vw;
     height: 1000vh;
     background-color: white;
