@@ -185,7 +185,7 @@ ul li a {
 }
 
 /* 图片自适应父容器 */
-.leftwork img,.rightwork img {
+.leftwork img,.rightwork img,.show img{
     width: 100%;
     height: auto;
     display: block;
@@ -209,23 +209,26 @@ ul li a {
 }
 #showcase{
     width: 70vw;
-    height: 1000px;
-    margin: auto;
-    padding:20px;
+    margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;              /* 小屏时换行堆叠 */
+    justify-content: space-between; /* 左右分散 */
+    align-items: flex-start;
+    gap: 2vw;
     padding-top: 15px;
     padding-bottom: 15px;
-    background-color: blueviolet;
-    gap: 6vw;
+    box-sizing: border-box;
 }
 .show{
-    width: 25vw;
-    padding: 50px;
-    height: 400px;
-    background-color: aqua;
-    display: flex;
-    flex-direction: column;
+    flex: 0 0 48%;
+    max-width: 48%;
+}
+.sp{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 2vw;
+    color: rgb(104, 104, 104);
+    word-break: break-word;
 }
 .show p{
     width:20vw;
@@ -293,7 +296,7 @@ ul li a {
     #mnb{
         display:block;
     }
-    #cont p,.lwp,.rwp{
+    #cont p,.lwp,.rwp,.sp{
         font-size: 4.5vw;
     }
     #cont ul{
@@ -313,13 +316,13 @@ ul li a {
         justify-content: center;
         gap: 4vw;
     }
-    .leftwork,.rightwork {
+    .leftwork,.rightwork,.show{
         flex: 0 0 100%;
         max-width: 100%;
         width: 70vw;   /* 你原来想要的宽度 */
         margin: 0 auto;
     }
-    .leftwork img,.rightwork img {
+    .leftwork img,.rightwork img,.show img{
         width: 100%;
     }
 }
@@ -330,7 +333,7 @@ ul li a {
     #mnb{
         display: none;
     }
-    #cont p,.lwp,.rwp{
+    #cont p,.lwp,.rwp,.sp{
         font-size: 1vw;
     }
     #cont ul{
