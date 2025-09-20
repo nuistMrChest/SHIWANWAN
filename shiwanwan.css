@@ -262,6 +262,10 @@ ul li a {
     width: 60px;
     height: 60px;
     background-color: rgb(50, 123, 148);
+    background-image: url("lst.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
     border-radius: 10px;
     position: fixed;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
