@@ -1,39 +1,40 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>SHI WANWAN</title>
-        <meta charset="UTF-8">
-        <link rel="icon" href="favicon.jpg" type="image/jpeg">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <link rel="stylesheet" href="shiwanwan.css">
-        <div id="bk">
-            <div id="dark"></div>
-        </div>
-        <div id="mnb"></div>
-        <div id="mnvbk">
-            <div id="mnv">
-                <ul>
-                    <li><a href="index.html">News & Contact</a></li>
-                    <li><a href="pro.html">Projects</a></li>
-                    <li><a href="coo.html">Cooperation projects</a></li>
-                    <li><a href="tex.html">Texts</a></li>
-                    <li><a href="bio.html">Biography</a></li>
-                </ul>
-            </div>
-        </div>
-        <div id="head">
-            <div id="icon">
-                <div id="pct"></div>
-            </div>
-            <div id="tpcnt">
-                <h1 id="name">sHI Wanwan</h1>
-                <h1 id="job">Artist</h1>
-            </div>
-        </div>
-        <div id="nav">
-            <ul id="nu">
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>石玩玩 Shi Wanwan - 艺术家个人主页</title>
+    <link rel="icon" href="favicon.jpg" type="image/jpeg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="石玩玩 (Shi Wanwan) 的个人艺术主页，展示最新展览、合作项目及新闻报道，涵盖当代艺术作品、行为艺术和策展项目。">
+    <meta name="keywords" content="石玩玩, Shi Wanwan, 艺术家, 当代艺术, 展览, 行为艺术, Projects, Biography">
+    <link rel="stylesheet" href="shiwanwan.css">
+    <style>
+    #showcase .show p {
+        width: 100% !important;
+        margin: 0 !important;
+        word-break: break-word;
+        white-space: normal;
+    }
+    #cont section:last-of-type p {
+    word-break: break-all;        /* 强制长 URL 换行 */
+    overflow-wrap: break-word;    /* 兼容性 */
+    white-space: normal !important;
+}
+    </style>
+</head>
+<body>
+    <!-- 背景 -->
+    <div id="bk">
+        <div id="dark"></div>
+    </div>
+
+    <!-- 移动端菜单按钮 -->
+    <div id="mnb" aria-label="移动端菜单按钮"></div>
+
+    <!-- 移动端菜单弹窗 -->
+    <div id="mnvbk" role="dialog" aria-modal="true">
+        <div id="mnv">
+            <ul>
                 <li><a href="index.html">News & Contact</a></li>
                 <li><a href="pro.html">Projects</a></li>
                 <li><a href="coo.html">Cooperation projects</a></li>
@@ -41,61 +42,78 @@
                 <li><a href="bio.html">Biography</a></li>
             </ul>
         </div>
-        <div id="cont">
+    </div>
+
+    <!-- 顶部信息 -->
+    <header id="head">
+        <div id="icon">
+            <div id="pct" alt="石玩玩头像"></div>
+        </div>
+        <div id="tpcnt">
+            <h1 id="name">石玩玩 Shi Wanwan</h1>
+            <h2 id="job">当代艺术家 / Artist</h2>
+        </div>
+    </header>
+
+    <!-- 导航栏 -->
+    <nav id="nav" aria-label="主导航">
+        <ul id="nu">
+            <li><a href="index.html">News & Contact</a></li>
+            <li><a href="pro.html">Projects</a></li>
+            <li><a href="coo.html">Cooperation projects</a></li>
+            <li><a href="tex.html">Texts</a></li>
+            <li><a href="bio.html">Biography</a></li>
+        </ul>
+    </nav>
+
+    <!-- 主体内容 -->
+    <main id="cont">
+        <section>
             <h1>最近的展览和正在完成的项目</h1>
             <div class="hr"><hr></div>
-            <h1>Recent exhibition & Ongoing project</h1>
+            <h2>Recent Exhibition & Ongoing Projects</h2>
             <div id="showcase">
-                <div class="show">
-                    <img src="./show/1.jpeg">
-                    <h1>
-                        请注意—
-                    </h1>
-                    <h1>
-                        A Call to Attention
-                    </h1>
-                    <div class="sp">
+                <article class="show">
+                    <img src="./show/1.jpeg" alt="石玩玩参与的艺术展：A Call to Attention">
+                    <h3>请注意—</h3>
+                    <h3>A Call to Attention</h3>
+                    <p class="sp">
                         艺术家：冯晨、李明维、纳斯佳·萨德·伦克、石玩玩、皮尔维·塔卡拉、余政达、朱田<br>
-                        展期：2020年9月20日—2021年1月10日 <br>
+                        展期：2020年9月20日—2021年1月10日<br>
                         UCCA沙丘美术馆
-                    </div>
-                    <div class="sp">
-                        Aritis: Feng Chen, Lee Mingwei, Nastja Sade Rokko, Shi Wanwan, Pilvi Takala, Yu Cheng-Ta, Zhu Tian <br>
+                    </p>
+                    <p class="sp">
+                        Artists: Feng Chen, Lee Mingwei, Nastja Sade Rokko, Shi Wanwan, Pilvi Takala, Yu Cheng-Ta, Zhu Tian <br>
                         Date: 2020.9.20-2021.1.10 <br>
                         Venue: UCCA Dune Art Museum
-                    </div>
-                </div>
-                <div class="show">
-                    <img src="./show/2.jpeg">
-                    <h1>
-                        海边笔记
-                    </h1>
-                    <h1>
-                        Notes By The Sea
-                    </h1>
-                    <div class="sp">
+                    </p>
+                </article>
+
+                <article class="show">
+                    <img src="./show/2.jpeg" alt="石玩玩艺术展：Notes By The Sea">
+                    <h3>海边笔记</h3>
+                    <h3>Notes By The Sea</h3>
+                    <p class="sp">
                         开幕时间：2020年11月16日<br>
                         展览周期：2020年11月17日-2020年12月23日<br>
-                        展览地点：美副将大马路55-61号望厦山房（美副将公务员宿舍旧址），澳门半岛，澳门<br>
+                        展览地点：澳门望厦山房<br>
                         主办：牛房仓库<br>
                         学术主持：管怀宾<br>
                         策展人：宋振熙<br>
-                        艺术家：石玩玩<br>
-                    </div>
-                    <div class="sp">
-                        Opening ceremony: 16/11/2020 (Monday), 18:30<br>
-                        Exhibition period: 17/11/2020-23/12/2020<br>
-                        Venue: N.o 55-61 Avenida do Coronel Mesquita, Mong-Ha Villas (Antigos Dormitórios de Funcionários Públicos), Macau<br>
-                        Organisation: Ox Warehouse<br>
-                        Academic Host: Guan Huaibin<br>
-                        Curator: Song Zhenxi<br>
-                        Artist: Shi Wanwan<br>
-                    </div>
-                </div>
+                        艺术家：石玩玩
+                    </p>
+                    <p class="sp">
+                        Opening ceremony: 16/11/2020, Venue: Macau<br>
+                        Artist: Shi Wanwan
+                    </p>
+                </article>
             </div>
-            <h1>媒体报道</h1>
+        </section>
+
+        <section>
+            <h2>媒体报道 / News Report</h2>
             <div class="hr"><hr></div>
-            <h1>News report</h1>
+            <h2>News report</h2>
             <p>
                 《Public art show invigorates South China's urban scenes》https://enapp.chinadaily.com.cn/a/202201/05/AP61d55afba310b7d50babbcb0.html<br>
                 《请注意——》https://ucca.org.cn/exhibition/a-call-to-attention/?fbclid=IwAR2DiLNr-1KdgPKrVht-etact709bFsTQ-vswPdHptLdOS_5fUeOAOj--KE<br>
@@ -143,7 +161,9 @@
                 《2013 A4青年艺术家实验季第一回展》http://fashion.163.com/13/0708/10/938MRRE700264MK3.html<br>
                 《“打开本子·你看我看你”北京座谈会回顾》https://site.douban.com/todayart/widget/notes/112854/note/145792677/<br>
             </p>
-        </div>
-        <script src="shiwanwan.js"></script>
-    </body>
+        </section>
+    </main>
+
+    <script src="shiwanwan.js"></script>
+</body>
 </html>
