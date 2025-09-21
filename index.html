@@ -1,169 +1,64 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <title>石玩玩 Shi Wanwan - 艺术家个人主页</title>
-    <link rel="icon" href="favicon.jpg" type="image/jpeg">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="石玩玩 (Shi Wanwan) 的个人艺术主页，展示最新展览、合作项目及新闻报道，涵盖当代艺术作品、行为艺术和策展项目。">
-    <meta name="keywords" content="石玩玩, Shi Wanwan, 艺术家, 当代艺术, 展览, 行为艺术, Projects, Biography">
-    <link rel="stylesheet" href="shiwanwan.css">
-    <style>
-    #showcase .show p {
-        width: 100% !important;
-        margin: 0 !important;
-        word-break: break-word;
-        white-space: normal;
-    }
-    #cont section:last-of-type p {
-    word-break: break-all;        /* 强制长 URL 换行 */
-    overflow-wrap: break-word;    /* 兼容性 */
-    white-space: normal !important;
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO -->
+<title>石玩玩 Shiwanwan - 艺术家个人官网与作品展示</title>
+<meta name="description" content="石玩玩（Shiwanwan）是一位当代艺术家，专注于绘画与创作。浏览他的个人官网，了解最新作品、展览信息和艺术风格。">
+<meta name="keywords" content="石玩玩, Shiwanwan, 艺术家, 绘画, 作品, 展览, 个人官网">
+<meta name="robots" content="index, follow">
+
+<!-- 延迟跳转 -->
+<meta http-equiv="refresh" content="3;url=news.html">
+
+<!-- 结构化数据（可选） -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "石玩玩",
+  "alternateName": "Shiwanwan",
+  "url": "news.html",
+  "jobTitle": "艺术家",
+  "sameAs": [
+    "https://www.instagram.com/shiwanwan",
+    "https://twitter.com/shiwanwan"
+  ]
 }
-    </style>
+</script>
+
+<style>
+body { font-family: Arial,sans-serif; background:#f5f5f5; color:#333; line-height:1.6; margin:0; padding:2rem; }
+.container { max-width:800px; margin:3rem auto; background:#fff; padding:2rem; border-radius:8px; box-shadow:0 2px 10px rgba(0,0,0,0.1);}
+h1 { color:#222; }
+h2 { color:#555; }
+a { color:#1a73e8; text-decoration:none; }
+a:hover { text-decoration:underline; }
+img { max-width:100%; height:auto; border-radius:5px; margin:1rem 0;}
+</style>
 </head>
 <body>
-    <!-- 背景 -->
-    <div id="bk">
-        <div id="dark"></div>
-    </div>
+<div class="container">
+<h1>石玩玩 (Shiwanwan) - 当代艺术家</h1>
+<h2>艺术家简介</h2>
+<p>石玩玩（Shiwanwan）是一位专注于绘画与创作的当代艺术家。他的作品融合了现代与传统元素，呈现独特的视觉体验。石玩玩的创作涵盖画作、装置艺术与多媒体艺术，作品曾在国内外多次展出。</p>
 
-    <!-- 移动端菜单按钮 -->
-    <div id="mnb" aria-label="移动端菜单按钮"></div>
+<h2>作品与展览</h2>
+<p>石玩玩的代表作品包括《梦境之境》、《光影流转》等。他曾参与上海、北京、东京等地的艺术展览，与众多画廊合作展出作品，获得收藏家的关注与好评。</p>
 
-    <!-- 移动端菜单弹窗 -->
-    <div id="mnvbk" role="dialog" aria-modal="true">
-        <div id="mnv">
-            <ul>
-                <li><a href="index.html">News & Contact</a></li>
-                <li><a href="pro.html">Projects</a></li>
-                <li><a href="coo.html">Cooperation projects</a></li>
-                <li><a href="tex.html">Texts</a></li>
-                <li><a href="bio.html">Biography</a></li>
-            </ul>
-        </div>
-    </div>
+<h2>官方网站</h2>
+<p>更多作品、展览信息及联系方式，请访问艺术家官网：<a href="news.html">石玩玩官网</a></p>
 
-    <!-- 顶部信息 -->
-    <header id="head">
-        <div id="icon">
-            <div id="pct" alt="石玩玩头像"></div>
-        </div>
-        <div id="tpcnt">
-            <h1 id="name">Shi Wanwan</h1>
-            <h2 id="job">Artist</h2>
-        </div>
-    </header>
+<img src="pro/1/1.jpg" alt="石玩玩作品示例">
 
-    <!-- 导航栏 -->
-    <nav id="nav" aria-label="主导航">
-        <ul id="nu">
-            <li><a href="index.html">News & Contact</a></li>
-            <li><a href="pro.html">Projects</a></li>
-            <li><a href="coo.html">Cooperation projects</a></li>
-            <li><a href="tex.html">Texts</a></li>
-            <li><a href="bio.html">Biography</a></li>
-        </ul>
-    </nav>
+<p>页面将在 <strong>3 秒</strong> 后自动跳转到官网。如果未跳转，请点击：<a href="news.html">立即前往官网</a></p>
+</div>
 
-    <!-- 主体内容 -->
-    <main id="cont">
-        <section>
-            <h1>最近的展览和正在完成的项目</h1>
-            <div class="hr"><hr></div>
-            <h2>Recent Exhibition & Ongoing Projects</h2>
-            <div id="showcase">
-                <article class="show">
-                    <img src="./show/1.jpeg" alt="石玩玩参与的艺术展：A Call to Attention">
-                    <h3>请注意—</h3>
-                    <h3>A Call to Attention</h3>
-                    <p class="sp">
-                        艺术家：冯晨、李明维、纳斯佳·萨德·伦克、石玩玩、皮尔维·塔卡拉、余政达、朱田<br>
-                        展期：2020年9月20日—2021年1月10日<br>
-                        UCCA沙丘美术馆
-                    </p>
-                    <p class="sp">
-                        Artists: Feng Chen, Lee Mingwei, Nastja Sade Rokko, Shi Wanwan, Pilvi Takala, Yu Cheng-Ta, Zhu Tian <br>
-                        Date: 2020.9.20-2021.1.10 <br>
-                        Venue: UCCA Dune Art Museum
-                    </p>
-                </article>
-
-                <article class="show">
-                    <img src="./show/2.jpeg" alt="石玩玩艺术展：Notes By The Sea">
-                    <h3>海边笔记</h3>
-                    <h3>Notes By The Sea</h3>
-                    <p class="sp">
-                        开幕时间：2020年11月16日<br>
-                        展览周期：2020年11月17日-2020年12月23日<br>
-                        展览地点：澳门望厦山房<br>
-                        主办：牛房仓库<br>
-                        学术主持：管怀宾<br>
-                        策展人：宋振熙<br>
-                        艺术家：石玩玩
-                    </p>
-                    <p class="sp">
-                        Opening ceremony: 16/11/2020, Venue: Macau<br>
-                        Artist: Shi Wanwan
-                    </p>
-                </article>
-            </div>
-        </section>
-
-        <section>
-            <h2>媒体报道 / News Report</h2>
-            <div class="hr"><hr></div>
-            <h2>News report</h2>
-            <p>
-                《Public art show invigorates South China's urban scenes》https://enapp.chinadaily.com.cn/a/202201/05/AP61d55afba310b7d50babbcb0.html<br>
-                《请注意——》https://ucca.org.cn/exhibition/a-call-to-attention/?fbclid=IwAR2DiLNr-1KdgPKrVht-etact709bFsTQ-vswPdHptLdOS_5fUeOAOj--KE<br>
-                《永远有多远 | 官宣！9月12日杭州工艺美术博物馆“博物馆@当代艺术跨界系列II”即将开展》https://xw.qq.com/cmsid/2020090801311400?f=dfz<br>
-                《2019苏州国际设计周：汇聚苏州，共赴时尚盛宴》https://ishare.ifeng.com/c/s/v002FQ-_d4HWe--glvevaVjOIHyi4pqc0kQ9yYpc6oZZaKGuKO2crM15Kv9UgPgT51W5BYm5wbT0pBdeGS3aC-_5Bgtiw____<br>
-                《2019苏州国际设计周，人文精神与当代苏州的艺术新面貌》http://js.ifeng.com/a/20191107/7811702_0.shtml<br>
-                《“石家庄的夜巴黎”每个北方小城市都有个巴黎梦》https://news.artron.net/20191015/n1062592.html<br>
-                《“石家庄的夜巴黎”10月13日于万营艺术空间启幕》http://mini.eastday.com/mobile/191016191400612.html#<br>
-                《展讯｜石玩玩X蔡国杰双个展 | 阿波罗计划第三回》http://intermediart.org/2019/09/10/%e5%b1%95%e8%ae%af%ef%bd%9c%e7%9f%b3%e7%8e%a9%e7%8e%a9x%e8%94%a1%e5%9b%bd%e6%9d%b0%e5%8f%8c%e4%b8%aa%e5%b1%95-%e9%98%bf%e6%b3%a2%e7%bd%97%e8%ae%a1%e5%88%92%e7%ac%ac%e4%b8%89%e5%9b%9e/<br>
-                《爱丽丝 | 石玩玩台湾个人艺术计划》https://xw.qq.com/amphtml/20190315G0OP8N/20190315G0OP8N00<br>
-                《识阈与换位－蔡国杰与石玩玩香港双个展》https://news.artron.net/20190223/n1045995.html<br>
-                《交叉域，中日新锐当代艺术在金鸡湖美术馆》http://www.hiart.cn/news/detail/643iuwu.html<br>
-                《石玩玩：艺术的传说》http://roll.sohu.com/20120902/n352119413.shtml<br>
-                《苏河艺术（北京）将展出石玩玩个展》http://auction.artron.net/20060801/n1168.html<br>
-                《“2013A4青年艺术家实验季第一回展”正式揭幕》http://news.artxun.com/huihua-1729-8640595.shtml<br>
-                《UCCA 艺术家工作坊：“寻找”游戏》https://www.douban.com/event/18260722/<br>
-                《为什么有时我们看不懂行为艺术？》http://www.sohu.com/a/124359155_417816<br>
-                《石玩玩个展——“正如你所见，你也可以拥有”即将开幕》https://blog.artron.net/space-690420-do-blog-id-992147.html<br>
-                《中国拍卖史上首场观念艺术拍卖》http://auction.artron.net/20120517/n237031.html<br>
-                《“￥％??@￥！＃饿￥日”当代艺术展现场》http://tech.163.com/07/0403/13/3B5JTV0O000924H2_all.html<br>
-                《没有预设的声音》http://doc.qkzz.net/article/0a672f31-82f2-4441-a35e-e095de827948.htm<br>
-                《#抽象画理解实验#星空间｜抽象「Q & A」》http://www.mingrenw.cn/art/yishu/242933.html<br>
-                《让巴斯奎特走出美术馆》http://ent.sina.com.cn/x/2006-05-18/02001085088.html<br>
-                《A4 对谈 | 你好，策展人 — 金岛隆弘 X 李杰，亚洲当代艺术对谈》http://www.sohu.com/a/154554877_691751<br>
-                《当代艺术私人基金会》http://gallery.artron.net/889/g_shownews889_7992.html<br>
-                《“2013A4青年艺术家实验季第一回展”正式揭幕》http://news.99ys.com/news/2013/0714/19_135306_1.shtml<br>
-                《看不见的群众》http://blog.sina.com.cn/s/blog_979ccbca0102uzab.html<br>
-                《所见即所得 石玩玩个展登陆HIHEY》http://www.ionly.com.cn/nbo/news/info3/120120827/1121530.html<br>
-                《地一现场再展实验观念 石玩玩“清贫”面纱揭起》http://www.hiart.cn/news/detail/43ectBq.html<br>
-                《非常久远的玩笑 —— 石玩玩个展现场采访》http://www.artspy.cn/html/video/0/473.html<br>
-                《ART•SANYA艺术季绽放亚龙湾》http://art.china.cn/huihua/2012-12/31/content_5637544.htm<br>
-                《华茂一楼，从千里走单骑到随风而逝》http://www.hiart.cn/news/detail/f83eszm.html<br>
-                《艺术的传奇》http://www.rgdj.gov.cn/RCDW/RCFC/13451.html<br>
-                《无用之用：从行为艺术出发》http://blog.sina.com.cn/s/blog_ed2805b90101f9gr.html<br>
-                《杜曦云对话石玩玩》http://collection.sina.com.cn/ddys/20120802/172177993.shtml<br>
-                《石玩玩个展——正如你所见，你也可以拥有》http://v.youku.com/v_show/id_XNDQ0ODE3MDUy.html?debug=flv<br>
-                《石玩玩：电影中的绘画，道具可否成为艺术？》http://www.wallpost.cn/article-4668-1.html<br>
-                《今日艺术网IART第二十一期-非常久远的玩笑》http://www.artnow.com.cn/iart/TodayVideoDetail_599_25337<br>
-                《萨科齐访问中国》http://news.163.com/photonew/00AN0001/9027_10.html<br>
-                《2016年盘点，万字长文解读中国当代艺术十大现象》http://www.bjdcfy.com/fangan/yeyyszztfa/2017-1/791294.html<br>
-                《共同体的孤独》http://www.artforum.com.cn/diary/5325<br>
-                《墙艺术封面展 整体营销 一箭双雕》http://www.hiart.cn/news/detail/2e5drtm.html<br>
-                《哇！我在绿棚上天入地》http://fashion.ifeng.com/news/detail_2013_07/28/27990696_0.shtml<br>
-                《成都当代艺术展昨扎堆开展》http://fashion.ifeng.com/news/detail_2013_07/14/27479559_0.shtml<br>
-                《2013 A4青年艺术家实验季第一回展》http://fashion.163.com/13/0708/10/938MRRE700264MK3.html<br>
-                《“打开本子·你看我看你”北京座谈会回顾》https://site.douban.com/todayart/widget/notes/112854/note/145792677/<br>
-            </p>
-        </section>
-    </main>
-
-    <script src="shiwanwan.js"></script>
+<script>
+setTimeout(() => { window.location.href = "news.html"; }, 3000);
+</script>
 </body>
 </html>
