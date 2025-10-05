@@ -314,6 +314,9 @@ ul li a {
     #cont p,.lwp,.rwp,.sp{
         font-size: 4.5vw;
     }
+    .name{
+        font-size: 4.2vw;
+    }
     #cont ul{
         font-size: 6vw;
     }
@@ -350,6 +353,9 @@ ul li a {
     }
     #cont p,.lwp,.rwp,.sp{
         font-size: 1vw;
+    }
+    .name{
+        font-size: 0.8vw;
     }
     #cont ul{
         font-size: 1.5vw;
