@@ -41,9 +41,15 @@ document.addEventListener("DOMContentLoaded", () => {
         <div style="text-align:center; padding: 10px; font-size:14px; color:#666;">
         <a href="https://beian.miit.gov.cn/" 
             style="text-decoration:none; color:#666;" target="_blank">
-            <img src="https://www.beian.gov.cn/img/new/gongan.png" 
-                style="vertical-align:middle; width:16px; height:16px; margin-right:5px;" />
             苏ICP备17061437号-2
+        </a>
+        </div>
+        <div style="text-align:center; padding: 10px; font-size:14px; color:#666;">
+        <a href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32050502012396" 
+            style="text-decoration:none; color:#666;" target="_blank">
+            <img src="https://www.beian.gov.cn/img/new/gongan.png"
+                style="vertical-align:middle; width:16px; height:16px; margin-right:5px;" />
+            苏公网安备32050502012396号
         </a>
         </div>
     `;
