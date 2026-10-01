@@ -55,3 +55,31 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
     document.body.appendChild(footer);
 });
+
+// 列表文件可独立更新，每次打开页面都从服务器获取最新内容。
+document.addEventListener("DOMContentLoaded", () => {
+    const lists = {
+        index_ul_rep: "/index_ul.html",
+        works_ul_rep: "/works_ul.html",
+        curaturial_ul_rep: "/curaturial_ul.html",
+        writing_ul_rep: "/writing_ul.html"
+    };
+
+    Object.entries(lists).forEach(async ([id, file]) => {
+        const container = document.getElementById(id);
+        if (!container) return;
+
+        try {
+            const response = await fetch(file, { cache: "no-store" });
+            if (!response.ok) {
+                throw new Error(`${file}: HTTP ${response.status}`);
+            }
+            container.innerHTML = await response.text();
+        } catch (error) {
+            console.error("列表加载失败", error);
+            const message = document.createElement("p");
+            message.textContent = "列表加载失败，请刷新页面重试。";
+            container.replaceChildren(message);
+        }
+    });
+});
